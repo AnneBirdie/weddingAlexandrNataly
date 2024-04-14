@@ -1,0 +1,683 @@
+@media (max-width: 600px){
+    #scroll_btn{
+        width: 40px;
+        height: 40px;
+        font-size: 25px;
+        top: 90%;
+    }
+    .container{
+        height: 740px;
+    }
+    .titles{
+        width: 95%;
+    }
+    /*block 1 .......................................*/
+    #block_1_background{
+        background: none;
+    }
+
+    #block_1_title_text{
+        width: 100%;
+        background-image: url(/newProjectWedding/images/pngwing\ 212.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    #block_1_title{
+        margin-top: 40%;
+        max-width: 300px;
+        max-height: 310px;
+    }
+    #block_1_title_text{
+        min-width: 155px;
+        min-height: 155px;
+    }
+    #block_1_title_text h1{
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 30px;
+        
+    }
+    
+    .block_1_leaves img{
+        width: 10%;
+    }
+
+    #block_1_text{
+        font-size: 20px;
+    }
+
+    .block_1_blocks{
+        margin: 20px 20px 0px 20px;
+        padding: 5px;
+        font-size: 14px;
+    }
+    #block_1_date{
+        margin-top: 15%;
+    }
+    #block_1_date_center_month{
+        font-size: 20px;
+    }
+    #block_1_date_center_day{
+        font-size: 48px;
+    }
+    #block_1_date_center_year{
+        font-size: 20px;
+    }
+
+    /*block 2 .......................................*/
+    .block_2_img{
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+    .block_2_img img{
+        width: 100%;
+        height: auto;
+    }
+
+    .titles{
+        font-size: 24px;
+    }
+
+    #block_2_bottom{
+        font-size: 18px;
+        padding: 60px 20px 0 20px;
+        width: 90%;
+    }
+
+   .timer__items{
+        font-size: 180%;
+        margin-right: 30%;
+        margin-left: 30%;
+        max-width: 80%;
+   }
+   .timer__item{
+       margin-left: 10px;
+       margin-right: 0px;
+       min-width: 40px;
+   }
+   .timer__item:not(:last-child)::after {
+       right: -7px;
+   }
+   .timer__item::before{
+       font-size: 12px;
+   }
+
+/*block 3 .......................................*/
+#block_3{
+    width: 80%;
+    min-height: auto;
+}
+
+#reg_form{
+    margin-top: 5%;
+    font-size: 16px;
+}
+#name, #surname, .form-row > button,   #comment, select>option, select{
+    margin-bottom: 2%;
+    font-size: 16px;
+    
+}
+.wrapper{
+    font-size: 16px;
+
+}
+.wrapper>li{
+    min-height: 50px;
+}
+
+.form-checkbox{
+    padding-left: 0px;
+}
+.checkbox.style-f {
+    padding-left: 15%;
+  }
+  .checkbox.style-f:hover input ~ .checkbox__checkmark {
+    background-color: rgba(132, 155, 110, 0.349);
+  }
+  .checkbox.style-f .checkbox__checkmark {
+    top: 1px;
+    height: 15px;
+    width: 15px;
+  }
+
+.checkbox.style-f .checkbox__checkmark:after {
+    width: 15px;
+    height: 15px; 
+}
+
+.checkbox.style-f .checkbox__body {
+    font-size: 12px;
+    margin-bottom: 3px;
+    font-family: "Playfair Display", serif;
+}
+
+.checkbox.style-f input:checked ~ .checkbox__body {
+    font-weight: 450;
+    color: rgb(27, 37, 32);
+  }
+
+/*block 4 .......................................*/
+
+#block_4_amount_guests{
+    font-size: 12px;
+}
+
+#block_4_board{
+    font-size: 12px;
+    grid-template-columns: 1fr 1fr;
+      
+}
+#block_4_img{
+    max-width: 70%;
+    left: 10%;
+}
+.guest{
+    padding: 4%;
+}
+
+    /*block 5 .......................................*/
+    .question{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    .answer{
+        font-size: 12px;
+        margin-left: 10px;
+    }
+    
+    .color{
+        width: 52px;
+        height: 52px;
+}
+    /*block 6 .......................................*/
+    #block_6{
+        min-height: auto;
+        margin-top: 30%;
+    }
+    #block_6_left, #block_6_right{
+        opacity: 0;
+        position: absolute;
+        z-index: -10;
+    }
+
+    .block_6_center_block img{
+        width: 70%;
+        height: auto;
+    }
+
+    .block_6_center_block p{
+        font-size: 20px;
+    }
+
+    .block_6_center_block{
+        margin-bottom: 15%;
+    }
+
+    /*block 7 .......................................*/
+    #block_7{
+        margin-top: 0;
+    }
+
+
+    #block_7_top{
+        margin-bottom: 5%;
+    }
+    
+    #block_7_top img{
+        bottom: 75%;
+        width: 85%;
+    }
+    
+    #block_7_hall{
+        margin-bottom: 1%;
+        font-size: 24px;
+    }
+    
+    #block_7_adress{
+        font-size: 20px;
+        margin-bottom: 1%;
+    }
+    
+    #map{
+        height: 300px;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+
+ /*block 8 .......................................*/
+        #block_8_description{
+            margin-top: 3%;
+            font-size: 16px;
+        }
+        #quiz{
+            font-size: 12px;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        #wishes{
+            width: 80%;
+        }
+        .wish_each{
+            font-size: 12px;
+        }
+        marquee{
+            background-size: 100%;
+        }
+        #stop_marquee_btn{
+            font-size: 16px;
+        }
+        #stop_marquee{
+            height: 8%;
+        }
+ /*block 9 .......................................*/
+ #block_9_background{
+    background-position: left;
+ }
+ #block_9_main{
+    width: 90%;
+ }
+#comment_wish, #name_wish, .block_9_form >li> button{
+    font-size: 18px;
+}
+#wish_form{
+    margin-top: 2%;
+    width: 100%;
+}
+.block_9_form{
+    margin-bottom: 2%;
+}
+.block_9_form{
+    width: 100%;
+}
+
+.block_9_form-row {
+    padding: 3%;
+}
+
+/*footer.............................................*/
+footer{
+    margin-top: 45%;
+    background-color: rgba(253, 249, 238, 0.795);
+    width:100%;
+}
+#footer_name{
+    font-size: 18px;
+}
+
+#footer_text{
+    font-size: 14px;
+}
+
+#links{
+    font-size: 10px;
+    margin-top: 3%;
+    text-decoration: underline;
+}
+}
+
+
+
+
+
+
+
+
+@media ((min-width: 601px) and (max-width: 1000px)){
+    /*block 1 .......................................*/
+    .container{
+        width: 100%;
+    }
+    #block_1_background{
+        background: none;
+    }
+
+    #block_1_title_text{
+        width: 100%;
+        background-image: url(/newProjectWedding/images/pngwing\ 212.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 70%;
+    }
+
+    
+    #block_1_title_text h1{
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 40px;
+    }
+
+    #block_1_text{
+        font-size: 30px;
+    }
+
+    .block_1_blocks{
+        margin: 20px 20px 0px 20px;
+        padding: 5px;
+        font-size: 32px;
+    }
+
+    #block_1_date_center{
+        margin-top: 0%;
+    }
+
+    #block_1_date_center_month{
+        font-size: 32px;
+    }
+    #block_1_date_center_day{
+        font-size: 52px;
+    }
+    #block_1_date_center_year{
+        font-size: 26px;
+    }
+
+    /*block 2 .......................................*/
+    #block_2{
+        height: auto;
+        margin-bottom: 35%;
+    }
+    .block_2_img img{
+        width: 100%;
+        height: auto;
+    }
+    .titles{
+        font-size: 40px;
+    }
+    #block_2_bottom{
+        width: 100%;
+    }
+    #block_2_bottom p{
+        font-size: 22px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    /*block 3 .......................................*/
+
+    #block_3{
+        width: 80%;
+        min-height: auto;
+    }
+    
+    #reg_form{
+        margin-top: 5%;
+    }
+    #name, #surname, .form-row > button,   #comment, select>option, select{
+        margin-bottom: 2%;
+        font-size: 20px;
+        
+    }
+    .wrapper{
+        font-size: 20px;
+    
+    }
+    .wrapper>li{
+        min-height: 50px;
+    }
+    
+    .form-checkbox{
+        padding-left: 0px;
+    }
+    .checkbox.style-f {
+        padding-left: 15%;
+      }
+      .checkbox.style-f:hover input ~ .checkbox__checkmark {
+        background-color: rgba(132, 155, 110, 0.349);
+      }
+      .checkbox.style-f .checkbox__checkmark {
+        top: 1px;
+        height: 20px;
+        width: 20px;
+      }
+    
+    .checkbox.style-f .checkbox__checkmark:after {
+        width: 20px;
+        height: 20px; 
+    }
+    
+    .checkbox.style-f .checkbox__body {
+        font-size: 18px;
+        margin-bottom: 3px;
+        font-family: "Playfair Display", serif;
+    }
+    
+    .checkbox.style-f input:checked ~ .checkbox__body {
+        font-weight: 450;
+        color: rgb(27, 37, 32);
+      }
+    
+    /*block 4 .......................................*/
+
+
+#block_4_board{
+    font-size: 18px;
+    grid-template-columns: 1fr 1fr 1fr;   
+}
+
+.guest{
+    padding: 4%;
+}
+
+    /*block 5 .......................................*/
+    #block_5{
+        width: 90%;
+
+    }
+    #block_5_background{
+        margin-bottom: 0;
+
+    }
+    .question{
+        font-size: 28px;
+        margin-left: 10px;
+    }
+    .answer{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    
+    .color{
+        width: 100px;
+        height: 100px;
+}
+
+    /*block 6 .......................................*/
+    #block_6{
+        min-height: auto;
+        max-height: auto;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+    #block_6_main{
+        width: 100%;
+        margin-top: 10%;
+    }
+.block_6_center_block{
+    margin-bottom: 10%;
+}
+    #block_6_right, #block_6_left{
+        opacity: 0;
+        position: absolute;
+        z-index: -10;
+    }
+
+    .block_6_center_time{
+        font-size: 36px;
+    }
+    .block_6_center_text{
+        font-size: 30px;
+    }
+    #block_6_center_timetable{
+        width: 100%;
+    }
+
+        /*block 7 .......................................*/
+        #block_7{
+            margin-top: 3%;
+            min-height: auto;
+            max-height: auto;
+            height: auto;
+        }
+        #block_7_top img, #block_7_title{
+            position: absolute;
+            z-index: -10;
+            opacity: 0;
+        }
+        #map{
+            height: 250px;
+        }
+
+         /*block 8 .......................................*/
+         #block_8_description{
+            margin-top: 3%;
+            margin-left: 1%;
+            margin-right: 1%;
+            font-size: 22px;
+        }
+        #quiz{
+            font-size: 16px;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        #wishes{
+            width: 80%;
+        }
+        .wish_each{
+            font-size: 16px;
+        }
+        marquee{
+            background-size: 100%;
+        }
+        #stop_marquee_btn{
+            font-size: 20px;
+        }
+        #stop_marquee{
+            height: 8%;
+        }
+         /*block 9 .......................................*/
+ #block_9_background{
+    background-position: left;
+ }
+ #block_9_main{
+    width: 90%;
+ }
+#comment_wish, #name_wish, .block_9_form >li> button{
+    font-size: 18px;
+}
+#wish_form{
+    margin-top: 2%;
+    width: 100%;
+}
+.block_9_form{
+    margin-bottom: 2%;
+}
+.block_9_form{
+    width: 100%;
+}
+
+.block_9_form-row {
+    padding: 3%;
+}
+/*footer.............................................*/
+footer{
+    margin-top: 45%;
+    background-color: rgba(253, 249, 238, 0.795);
+    width:100%;
+}
+#footer_name{
+    font-size: 18px;
+}
+
+#footer_text{
+    font-size: 14px;
+}
+
+#links{
+    font-size: 10px;
+    margin-top: 3%;
+    text-decoration: underline;
+}
+
+}
+
+@media ((min-width: 1001px) and (max-width: 1439px)){
+        /*block 1 .......................................*/
+        .container{
+            width: 100%;
+        }
+        #block_1_background{
+            background-position: center;
+        }
+
+    
+        #block_1_title_text{
+            width: 100%;
+        }
+
+        #block_1_date_center{
+            margin-top: 8%;
+        }
+        /*block 2 .......................................*/
+        #block_2_bottom{
+            width: 90%;
+        }
+        /*block 3 .......................................*/
+        #block_3{
+            width: 75%;
+        }
+
+
+        #block_5{
+            width: 90%;
+        }
+
+        .block_6_center_block{
+            margin-bottom: 10%;
+        }
+
+        #block_6_main{
+            width: 100%;
+        }
+
+        .block_6_center_time{
+            font-size: 30px;
+        }
+        .block_6_center_text{
+            font-size: 25px;
+        }
+
+        .block_6_img_center{
+            width: 60%;
+        }
+
+        #wishes{
+            width:90%;
+            background-position: center;
+        }
+
+        #block_9_background{
+            background-position: left;
+         }
+         #block_9_main{
+            width: 90%;
+         }
+        #wish_form{
+            margin-top: 2%;
+            width: 100%;
+        }
+        .block_9_form{
+            margin-bottom: 2%;
+        }
+        .block_9_form{
+            width: 100%;
+        }
+        
+        .block_9_form-row {
+            padding: 3%;
+        }
+        #scroll_btn{
+            left: 90%;
+        }
+}

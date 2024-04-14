@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <title>Wedding_Alexandr_Nataly</title>
+    <link rel = "stylesheet" href="styles/styles.css">
+    <link rel = "stylesheet" href="styles/media.css">
+    <link rel = "stylesheet" href="styles/scroll.css">
+
+    <script defer src="scripts/wedding.js"></script>
+    <script defer src="scripts/scroll.js"></script>
+    <script defer src="scripts/feedback_wish.js"></script>
+    <script defer src="scripts/feedback_reg.js"></script>
+</head>
+
+
+
+<body>
+
+  <a href="#"><div id="scroll_btn">↑</div></a>
+
+<!-- Block_1  .....................................................................................--> 
+<div id = "block_1_background" class = "container">
+  <div id = "block_1_title_text" class = "scroll">
+    <h1>Александр</h1>
+    <h1>и</h1>
+    <h1>Наталья</h1>
+  </div>                           
+  <div class = "block_1_info scroll">
+    <div id = "block_1_text">Мы счастливы пригласить<br>вас на нашу свадьбу.
+    </div>
+    <div id = "block_1_date">
+      <div id = "block_1_date_left" class = "block_1_blocks">пятница</div>
+      <div id = "block_1_date_center">
+        <div id = "block_1_date_center_month">Сентябрь</div>
+        <div id = "block_1_date_center_day">6</div>
+        <div id = "block_1_date_center_year">2024</div>
+      </div>
+      <div id = "block_1_date_right" class = "block_1_blocks">15 ч 30 мин</div>
+    </div>
+  </div>
+</div>
+
+<!-- Block_2  .....................................................................................--> 
+        
+<div class = "container" id = "block_2">
+  <div id = "block_2_top"  class = "scroll">
+    <div class = "block_2_img">
+      <img src = "images/block_2_top.png">
+    </div>
+    <div id = "block_2_title" class = "titles">
+            до бракосочетания <br> осталось :
+    </div>
+    <div class = "timer__items">
+      <div  class = "timer__item timer__days">00</div>
+      <div  class = "timer__item timer__hours">00</div>
+      <div class = "timer__item timer__minutes">00</div>
+      <div class = "timer__item timer__seconds">00</div>
+    </div>
+    <div class = "block_2_img">
+      <img src = "images/block_2_bottom.png">
+    </div>
+  </div>
+  <div id = "block_2_bottom"  class = "scroll">
+      <p>Для нас очень важно, чтобы вы смогли разделить с нами самое счастливое  мгновение в нашей жизни.</p>
+  </div>
+</div>
+
+    
+<!-- Block_3  .....................................................................................--> 
+<div id = "block_3_background"  class = "container">
+  <div id = "block_3" class = "scroll">
+    <div id = "block_3_title" class = "titles">
+            регистрация гостей
+    </div>
+
+    <form id="reg_form" method="post" name = "submit-to-google-sheet_reg">
+      <ul class="wrapper">
+        <li class="form-row">
+          <input name = "name" type="text" id="name" placeholder="Имя" required >
+        </li>
+        <li class="form-row">
+          <input name = "surname" type="text" id="surname" placeholder="Фамилия" required >
+        </li>
+        <li class="form-row">
+          <select name="registred" id = "registred" required>
+            <option disabled selected>Выберите</option>
+            <option id="yes" value="1">Я приду</option>
+            <option id="no" value="2">Я не смогу прийти</option>
+          </select>
+        </li>
+        <li class ="form_hidden" id ="drink">
+          <label class="checkbox style-f">
+            <input name="WineWhiteDry" type="checkbox"/>
+              <div class="checkbox__checkmark"></div>
+              <div class="checkbox__body">Вино белое сухое</div>
+          </label> <br>          
+          <label class="checkbox style-f">
+            <input name = "WineWhiteSweet" type="checkbox"/>
+              <div class="checkbox__checkmark"></div>
+              <div class="checkbox__body">Вино белое сладкое/полусладкое</div>
+          </label><br>
+          <label class="checkbox style-f">
+            <input name = "WineRedDry" type="checkbox"/>
+              <div class="checkbox__checkmark"></div>
+              <div class="checkbox__body">Вино красное сухое</div>
+          </label><br>
+          <label class="checkbox style-f">
+            <input name = "WineRedSweet" type="checkbox"/>
+              <div class="checkbox__checkmark"></div>
+              <div class="checkbox__body">Вино красное сладкое/полусладкое</div>
+          </label><br>
+          <label class="checkbox style-f">
+            <input name = "Vodka" type="checkbox"/>
+              <div class="checkbox__checkmark"></div>
+              <div class="checkbox__body">Водка</div>
+          </label><br>
+          <label class="checkbox style-f">
+            <input name = "Cognac" type="checkbox"/>
+              <div class="checkbox__checkmark"></div>
+              <div class="checkbox__body">Коньяк</div>
+          </label><br>
+          <label class="checkbox style-f">
+            <input name = "Champagne" type="checkbox"/>
+              <div class="checkbox__checkmark"></div>
+              <div class="checkbox__body">Шампанское</div>
+          </label><br>
+          <label class="checkbox style-f">
+            <input name = "NonAlchohol" type="checkbox"/>
+              <div class="checkbox__checkmark"></div>
+              <div class="checkbox__body">Безалкогольные напитки</div>
+          </label><br>
+          <label name = "any" class="checkbox style-f">
+            <input type="checkbox"/>
+              <div class="checkbox__checkmark"></div>
+              <div class="checkbox__body">Любое</div>
+          </label>                 
+        </li>
+        <li class="form-row">
+          <textarea name="comment" id = "comment" placeholder="*комментарии"></textarea>
+        </li>
+        <li class="form-row">
+          <button type="submit">Отправить</button>
+        </li>
+      </ul>
+    </form>
+  </div>
+</div>
+
+     <!-- Block_4  .....................................................................................--> 
+ <!--
+     <div id = "block_4_background" class = "container">
+  <div id = "block_4_top_bg">
+    <div id = "block_4_top">
+      <div id = "block_4_title" class = "titles scroll">
+        наши гости
+      </div>
+      <div id = "block_4_amount_guests"  class = "scroll">
+        количество зарегистрировавшихся гостей : 60
+      </div>
+    </div>
+    <div id = "block_4_board"  class = "scroll">
+      <div class = "guest scroll">
+        <p class="name_guest">*Анастасgfsdия</p>
+        <p class = "surname_guest">Чистоевfghgfа</p>
+      </div>
+      <div class = "guest scroll">
+        <p class="name_guest">*Анастасgfsdия</p>
+        <p class = "surname_guest">Чистоевfghgfа</p>
+      </div>
+      <div class = "guest scroll">
+        <p class="name_guest">*Анастасgfsdия</p>
+        <p class = "surname_guest">Чистоевfghgfа</p>
+      </div>
+      <div class = "guest scroll">
+        <p class="name_guest">*Анастасgfsdия</p>
+        <p class = "surname_guest">Чистоевfghgfа</p>
+      </div>
+      <div class = "guest scroll">
+        <p class="name_guest">*Анастасgfsdия</p>
+        <p class = "surname_guest">Чистоевfghgfа</p>
+      </div>
+      <div class = "guest scroll">
+        <p class="name_guest">*Анастасgfsdия</p>
+        <p class = "surname_guest">Чистоевfghgfа</p>
+      </div>
+      <div class = "guest scroll">
+        <p class="name_guest">*Анастасgfsdия</p>
+        <p class = "surname_guest">Чистоевfghgfа</p>
+      </div>
+      <div class = "guest scroll">
+        <p class="name_guest">*Анастасgfsdия</p>
+        <p class = "surname_guest">Чистоевfghgfа</p>
+      </div>
+      <div class = "guest scroll">
+        <p class="name_guest">*Анастасgfsdия</p>
+        <p class = "surname_guest">Чистоевfghgfа</p>
+      </div>
+      <div class = "guest scroll">
+        <p class="name_guest">*Анастасgfsdия</p>
+        <p class = "surname_guest">Чистоевfghgfа</p>
+      </div>
+      <div class = "guest scroll">
+        <p class="name_guest">*Анастасgfsdия</p>
+        <p class = "surname_guest">Чистоевfghgfа</p>
+      </div>
+      <div class = "guest scroll">
+        <p class="name_guest">*Анастасgfsdия</p>
+        <p class = "surname_guest">Чистоевfghgfа</p>
+      </div>
+      <div class = "guest scroll">
+        <p class="name_guest">*Анастасgfsdия</p>
+        <p class = "surname_guest">Чистоевfghgfа</p>
+      </div>
+    </div>
+  </div>
+</div>--> 
+     <!-- Block_5  .....................................................................................--> 
+<div id = "block_5_background" class = "container">
+  <div id = "block_5">
+    <div id = "block_5_title" class = "titles scroll">
+        отвечаем на ваши вопросы
+    </div>
+    <div id="block_questions">
+      <div class = "question scroll">
+        <img src = "/newProjectWedding/images/кристалл.png">
+          Будет ли дресс-код?</div>
+        <p class = "answer scroll">Мы будем рады, если наши гости выберут наряды в пастельных тонах.</p>
+        <div id = "colors" class = "scroll">
+          <div class = "color" id = "blue"></div>
+          <div class = "color" id = "green"></div>
+          <div class = "color" id = "yellow"></div>
+          <div class = "color" id = "turquoise"></div>
+          <div class = "color" id = "beige"></div>
+        </div>
+        <div class = "question scroll">
+          <img src = "/newProjectWedding/images/кристалл.png">
+          Какие подарки предпочтительны?</div>
+          <p class = "answer scroll">Мы будем рады поздравлениям в конвертах.</p>
+        <div class = "question scroll">
+          <img src = "/newProjectWedding/images/кристалл.png">
+          Кому можно задать вопросы по организации мероприятия?</div>
+          <p class = "answer scroll">По всем вопросам можно писать в telegram <a href = "#">@MakarovaNataly</a>, также есть общий чат нашей свадьбы  telegram <a href = "#">@MakarovaNataly</a>.</p>
+        <div class = "question scroll">
+          <img src = "/newProjectWedding/images/кристалл.png">
+          Где можно посмотреть фото с торжества?</div>
+          <p class = "answer scroll">Как только фотограф подготовит наш альбом - ссылка на него появится <a href = "#">здесь</a>.</p>
+        <div class = "question scroll">
+          <img src = "/newProjectWedding/images/кристалл.png">
+          Вход по лотерейным билетам</div>
+      </div>
+      <div id = "block_5_color"></div>
+    </div>
+  </div>
+    
+
+<!-- Block_6  .....................................................................................-->     
+<div class = "container" id = "block_6">
+  <div id = "block_6_main">
+    <div id = "block_6_left" class = "scroll">
+      <img src = "/newProjectWedding/images/block_6_left.png">
+    </div>
+    <div id = "block_6_center" class = "scroll">
+      <div id = "block_6_title" class = "titles">
+        программа свадебного дня
+      </div>
+      <div id = "block_6_center_timetable">
+        <div class = "block_6_center_block">
+          <img class="block_6_img_center" src = "/newProjectWedding/images/block_6_start.png">
+          <p class = "block_6_center_time">15 : 30</p>
+          <p class = "block_6_center_text">Свадебный Ужин</p>
+        </div>
+        <div class = "block_6_center_block">
+          <img  class="block_6_img_center" src = "/newProjectWedding/images/block_6_end.png">
+          <p class = "block_6_center_time">23 : 00</p>
+          <p class = "block_6_center_text">Окончание праздника</p>
+        </div>
+      </div>
+    </div>
+    <div id = "block_6_right" class = "scroll">
+      <img src = "/newProjectWedding/images/block_6_right.png">
+    </div>
+  </div>  
+</div>
+
+
+<!-- Block_7  .....................................................................................--> 
+<div class = "container" id = "block_7">
+  <div id = "block_7_top">
+    <img class = "scroll" src = "/newProjectWedding/images/block_7_img.png">
+    <div id = "block_7_title" class = "titles scroll">свадебный ужин</div>
+    <div id = "block_7_hall" class = "scroll">Банкетный зал "Barn house"</div>
+    <div id = "block_7_adress"class = "scroll">г. Пермь ул Степная, 2</div>
+  </div>
+  <div id = "map" class = "scroll">
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Afce5920bd182ebd40db24be1d5b8dca87328f29c8787f4ad5f22bf794d4320b5&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+  </div>
+</div>
+
+<!-- Block_8  ...................................... onmouseover="this.stop()" onmouseout="this.start()"...............................................--> 
+<div class = "container" id = "block_8">
+  <div id = "block_8_title" class = "titles scroll">доска поздравлений</div>
+  <p id = "block_8_description" class = "scroll">нам будет приятно, если вы оставите ваши поздравления здесь</p>
+  <p id = "quiz" class = "scroll">*за лучшее поздравление Вы можете получить приз на свадьбе</p>
+  <div id = "wishes" class = "scroll">
+    <marquee id = "marquee" direction="down" scrolldelay="300" truespeed="truespeed" >
+      <div class="wish_each">
+        <p class = "inner_wish">Жклаю крепкого здоровья, счатья и благополучия вашей семье! Радуйтесь каждому совместно прожитому дню, ловите улыбки друг друга, поддерживайте друг друга! Любви и взаимопонимания!</p>
+        <p class = "inner_name">Дeнис</p>
+      </div>
+      <div class="wish_each">
+        <p class = "inner_wish">Жклаю крепкого здоровья, аждому совместно прожитому дню, ловите улыбки друг друга, поддерживайте друг друга! Любви и взаимопонимания!</p>
+        <p class = "inner_name">Дeнис</p>
+      </div>
+      <div class="wish_each">
+        <p class = "inner_wish">Жклаю крепкого здоровья</p>
+        <p class = "inner_name">Дeнис</p>
+      </div>
+      <div class="wish_each">
+        <p class = "inner_wish">Жклаю крепкого здоровья, счатья и благополучия вашей семье! Радуйтесь каждому совместно прожитому дню, ловите улыбки друг друга, поддерживайте друг друга! Любви и взаимопонимания!</p>
+        <p class = "inner_name">Дeнис</p>
+      </div>
+      <div class="wish_each">
+        <p class = "inner_wish">Жклаю крепкого здоровья, аждому совместно прожитому дню, ловите улыбки друг друга, поддерживайте друг друга! Любви и взаимопонимания!</p>
+        <p class = "inner_name">Дeнис</p>
+      </div>
+      <div class="wish_each">
+        <p class = "inner_wish">Жклаю крепкого здоровья</p>
+        <p class = "inner_name">Дeнис</p>
+      </div>
+    </marquee>
+    <div id = "stop_marquee">
+      <button id = "stop_marquee_btn" class = "scroll">остановить</input>
+    </div>
+  </div>
+</div>
+
+
+<!-- Block_9  .....................................................................................--> 
+<div id = "block_9_background" class = "container">
+  <div id = "block_9_main" class = "scroll">
+    <div id = "block_9_title" class = "titles">
+      написать поздравление
+    </div>
+    <form method="post" id="wish_form" name = "submit-to-google-sheet" > 
+      <ul class="block_9_form">
+        <li class="block_9_form-row">
+          <textarea name="comment_wish" id = "comment_wish" placeholder="*поздравление" required></textarea>
+        </li>
+        <li class = "block_9_form-row">
+          <input type="text" name="name_wish" id="name_wish" placeholder="Имя" required >
+        </li>
+        <li class = "block_9_form-row">
+          <button id="wish_button" name = "submitWish" class = "btn_wish" type="submit">Отправить поздравление</button>
+        </li>
+    </form>
+  </div>
+  <footer>
+    <p id = "footer_name">Александр и Наталья</p>
+    <p id = "footer_text">Сайт-приглашение на свадьбу</p>
+    <p id = "links"><a href = "#">атрибуция</a></p>
+  </footer>
+</div>
+
+
+
+
+</body>
+</html>

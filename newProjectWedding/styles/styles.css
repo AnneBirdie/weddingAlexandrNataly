@@ -1,0 +1,865 @@
+/*Общие настройки блоков.........................................*/
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    box-sizing: border-box;
+    color: rgb(87, 82, 82);
+    font-family: "Playfair Display", serif;
+    background-color: rgba(252, 248, 237, 1);
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+.container{
+    width: 100%;
+    height: 1024px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titles{
+    font-size: 48px;
+    font-family: "Playfair Display SC", serif;
+    text-align: center;
+}
+
+#scroll_btn{
+    position: fixed;
+    z-index: 2;
+    right: 0px;
+    left: 80%;
+    top: 80%;
+    width: 80px;
+    height: 80px;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    border: rgba(191, 139, 4, 1) solid 1px;
+    background: linear-gradient(rgba(252, 248, 237, 0.46), rgba(252, 248, 237, 1));
+    border-radius: 50%;    
+    cursor: pointer;
+    transition: ease 0.5s; 
+}
+
+#scroll_btn:hover{
+    scale: 1.2;
+}
+
+/*Block_1...........................................................................................*/
+
+#block_1_background{
+    background-image: url("/newProjectWedding/images/Group\ 40.png");
+    justify-content: space-between;
+}
+
+#block_1_title_text{
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+}
+
+#block_1_title_text h1{
+    font-size: 85px;
+    font-weight: 500;
+    line-height: 90px;
+    text-align: center;
+}
+
+.block_1_info{
+    border-top: rgba(191, 139, 4, 1) solid 1px;
+    background: linear-gradient(rgba(252, 248, 237, 0.46), rgba(252, 248, 237, 1));
+    padding-top: 1%;
+    width: 100%;
+    height: 45%;
+}
+
+
+#block_1_text{
+    font-size: 30px;
+    text-align: center;
+    font-family: "Playfair Display SC", serif;
+}
+
+#block_1_date{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+    align-items: center;
+    text-align: center;
+}
+
+.block_1_blocks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    text-align: center;
+    margin: 90px 90px 0px 90px;
+    padding: 30px;
+    font-size: 32px;
+    text-align: center;
+    border-top: rgba(191, 139, 4, 1) solid 1px;
+    border-bottom: rgba(191, 139, 4, 1) solid 1px;
+}
+
+#block_1_date_center{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+    align-items: center;
+    text-align: center;
+    margin-top: 4%;
+}
+#block_1_date_center_month{
+    font-size: 36px;
+}
+#block_1_date_center_day{
+    font-size: 52px;
+}
+#block_1_date_center_year{
+    font-size: 32px;
+}
+
+
+/*Block_2......................................................................*/
+.block_2_img{
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+#block_2_bottom{
+    text-align: center;
+    font-size: 32px;
+    font-family: "Playfair Display SC", serif;
+    border-top: rgba(191, 139, 4, 1) solid 1px;
+    width: 50%;
+}
+
+.timer{
+    font-size: 190%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.timer__items {
+    display: flex;
+    font-size: 50px;
+    justify-content: center;
+}
+
+.timer__item {
+    position: relative;
+    min-width: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.timer__item::before {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    font-size: 20px;
+}
+
+.timer__item:not(:last-child)::after {
+    content: ':';
+    position: absolute;
+    right: -25px;
+}
+
+
+/*Block_3......................................................................*/
+#block_3_background{
+    background-image: url("/newProjectWedding/images/background_block_3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 10%;
+    margin-top: 5%;
+    height: auto;
+}
+
+#block_3{
+    background-color: rgba(253, 249, 238, 0.733);
+    border-radius: 10px;
+    border: rgba(246, 211, 121, 1) solid 1px;
+    width: 50%;
+    padding: 5%;
+    margin-top: 10%;
+}
+
+#block_3_title{
+    margin-top: 5%;
+}
+
+#reg_form{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 30px;
+    max-width: 100%;
+    min-width: 60%; 
+    z-index: 3;
+}
+
+.wrapper{
+    font-size: 36px;
+    list-style-type: none;
+}
+#name{
+    background-color: rgba(253, 249, 238, 0.54);
+    margin-bottom: 10px;
+    font-size: 30px;
+    border-radius: 10px;
+    border: rgba(246, 211, 121, 1) solid 1px;
+    cursor: pointer;
+    transition: ease 0.5s;
+    font-family: "Playfair Display SC", serif;
+    color: rgb(87, 82, 82);
+}
+#name:hover{
+    background-color: rgba(253, 249, 238, 0.753);
+}
+
+#name:focus{
+    outline: none;
+    box-shadow: 0 0 0px 2px rgba(246, 211, 121, 1);
+}
+
+#surname{
+    background-color: rgba(253, 249, 238, 0.54);
+    margin-bottom: 10px;
+    font-size: 30px;
+    border: rgba(246, 211, 121, 1) solid 1px;
+    border-radius: 10px;
+    font-family: "Playfair Display SC", serif;
+    cursor: pointer;
+    transition: ease 0.5s;
+    color: rgb(87, 82, 82);
+}
+#surname:hover{
+    background-color: rgba(253, 249, 238, 0.753);
+}
+
+#surname:focus{
+    outline: none;
+    box-shadow: 0 0 0px 2px rgba(246, 211, 121, 1);
+}
+
+select{
+    font-size: 30px;
+    margin-bottom: 10px;
+    background-color: rgba(253, 249, 238, 0.54);
+    border: rgba(246, 211, 121, 1) solid 1px;
+    border-radius: 10px;
+    padding-left: 10px;
+    color: rgba(81, 74, 74, 1);
+    size: 1px;
+    cursor: pointer;
+    transition: ease 0.5s;
+    width: 400px;
+    font-family: "Playfair Display SC", serif;
+    color: rgb(87, 82, 82);
+}
+select:hover{
+    background-color: rgba(253, 249, 238, 0.753);
+}
+
+select:focus{
+    outline: none;
+    box-shadow: 0 0 0px 2px rgba(246, 211, 121, 1);
+}
+
+select>option{
+    background-color: rgba(253, 249, 238, 0.54);
+    border: rgba(246, 211, 121, 1) solid 1px;
+    border-radius: 10px;
+    font-size: 30px;
+    width: 250px;
+    font-family: "Playfair Display SC", serif;
+    color: rgb(87, 82, 82);
+}
+
+select>option:focus{
+    outline: none;
+    box-shadow: 0 0 0px 2px rgba(246, 211, 121, 1);
+}
+
+#registred, #alcohol{
+    font-family: "Playfair Display SC", serif;
+    color: rgb(87, 82, 82);
+}
+
+.form-row {
+    display: flex;
+    justify-content: flex-end;
+    padding: .5em;
+    color: rgb(87, 82, 82);
+}
+
+  .form-row > input,
+  .form-row > button,
+  .form-row > select {
+    padding: .5em;
+    flex: 1;
+    color: rgb(87, 82, 82);
+  }
+  .form-row > button {
+    background-color: rgba(253, 249, 238, 0.54);
+    border-radius: 10px;
+    color: rgba(81, 74, 74, 1);
+    font-family: "Playfair Display SC", serif;
+    font-size: 30px;
+    border: rgba(246, 211, 121, 1) solid 1px;
+    width: 100%;
+    cursor: pointer;
+    transition: ease 0.5s;
+    color: rgb(87, 82, 82);
+  }
+  .form-row > button:hover {
+    background-color: rgba(247, 237, 211, 0.849);
+  }
+
+  #comment{
+    font-family: "Playfair Display SC", serif;
+    font-size: 30px;
+    border: rgba(246, 211, 121, 1) solid 1px;
+    border-radius: 10px;
+    padding-left: 10px;
+    background-color: rgba(253, 249, 238, 0.54);
+    color: rgb(87, 82, 82);
+    cursor: pointer;
+    transition: ease 0.5s;
+    width: 100%;
+  }
+#comment:hover{
+    background-color: rgba(253, 249, 238, 0.753);
+}
+
+#comment:focus{
+    outline: none;
+    box-shadow: 0 0 0px 2px rgba(246, 211, 121, 1);
+}
+
+
+.form_hidden{
+    display:none;
+}
+
+.form-checkbox{
+    list-style-type: none; 
+    padding-left: 20px;
+    font-size: 28px;
+    padding-right: 20px;
+    color: rgb(87, 82, 82);
+}
+
+/*Чекбоксы..............................*/
+
+.checkbox.style-f {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: "Playfair Display SC", serif;
+  }
+  .checkbox.style-f input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .checkbox.style-f input:checked ~ .checkbox__checkmark {
+    background-color: rgba(253, 249, 238, 0.54);
+  }
+  .checkbox.style-f input:checked ~ .checkbox__checkmark:after {
+    transform: scale(1);
+  }
+  .checkbox.style-f input:checked ~ .checkbox__body {
+    font-weight: 500;
+  }
+  .checkbox.style-f:hover input ~ .checkbox__checkmark {
+    background-color: rgba(253, 249, 238, 0.54);
+  }
+  .checkbox.style-f:hover input:checked ~ .checkbox__checkmark {
+    background-color: rgba(253, 249, 238, 0.54);
+  }
+  .checkbox.style-f .checkbox__checkmark {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    background-color: rgba(132, 155, 110, 0.349);
+    transition: background-color 0.25s ease;
+    border-radius: 11px;
+  }
+  .checkbox.style-f .checkbox__checkmark:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 22px;
+    height: 22px;
+    display: block;
+    background-color: rgba(58, 107, 80, 0.74);
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.25s ease;
+  }
+  .checkbox.style-f .checkbox__body {
+    color: #333;
+    line-height: 1.4;
+    font-size: 25px;
+    transition: font-weight 0.25s ease;
+  }
+
+
+
+/*Block_4......................................................................*/
+/*#block_4_background{
+    background-image: url(/newProjectWedding/images/block_9_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+    margin-bottom: 10%;
+    height: auto;
+}
+
+#block_4_top_bg{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgba(252, 248, 237, 1), rgba(252, 248, 237, 0.815), rgba(252, 248, 237, 0.842));
+    width: 100%;
+    height: 100%;
+}
+
+#block_4_top{
+    padding-top: 4%;
+    padding-bottom: 4%;
+    margin-bottom: 2%;
+}
+
+#block_4_amount_guests{
+    font-size: 32px;
+    margin-top: 2%;
+    text-align: center;
+}
+
+#block_4_board{
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 24px;
+    width: 80%;
+    background: linear-gradient(rgba(252, 248, 237, 0.46), rgba(252, 248, 237, 1));
+    border: rgba(246, 211, 121, 1) solid 1px;;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;  
+}
+
+.guest{
+    padding: 10%;
+}
+*/
+/*Block_5......................................................................*/
+#block_5_background{
+    background-image: url("/newProjectWedding/images/Group\ 50.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+#block_5{
+    margin-bottom: 0;
+    padding-bottom: 10%;
+    background: linear-gradient(rgba(252, 248, 237, 0.46), rgba(252, 248, 237, 1));
+    border: rgba(246, 211, 121, 1) solid 1px;;
+    border-radius: 10px;
+    padding: 1%;
+    width: 95%;
+}
+
+.question{
+    font-size: 40px;
+    margin-top: 4%;
+}
+.answer{
+    font-size: 25px;
+    margin-top: 1%;
+}
+#colors{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.color{
+    border: none;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+
+.color:hover{
+    scale: 120%;
+}
+
+#blue{
+    background-color: #566F5F;
+    border: rgba(246, 211, 121, 1) solid 2px;
+}
+#green{
+    background-color: #D1C1B4;
+    border: rgba(246, 211, 121, 1) solid 2px;
+}
+#yellow{
+    background-color: #DEB28D;
+    border: rgba(246, 211, 121, 1) solid 2px;
+}
+#turquoise{
+    background-color: #AF8678;
+    border: rgba(246, 211, 121, 1) solid 2px;
+}
+#beige{
+    background-color:#7E9C8D;
+    border: rgba(246, 211, 121, 1) solid 2px;
+}
+.answer>a{
+    cursor: pointer;
+    transition: ease 0.5s;
+    color: #4c8f65;
+    font-weight: 600;
+}
+.answer>a:hover{
+    text-decoration: underline;
+}
+
+/*Block_6......................................................................*/
+#block_6{
+    min-height: 1024px;
+}
+
+#block_6_main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+}
+
+#block_6_title{
+    margin-bottom: 10%;
+}
+#block_6_center{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#block_6_center_timetable{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.block_6_center_block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.block_6_center_time{
+    font-size: 40px;
+}
+.block_6_center_text{
+    font-size: 36px;
+}
+
+
+/*Block_7......................................................................*/
+#block_7{
+    margin-top: 10%;
+}
+
+#block_7_top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+#block_7_title{
+    margin: 2% 0 2% 0;
+}
+#block_7_hall{
+    font-size: 32px;
+}
+
+#block_7_adress{
+    font-size: 24px;
+
+}
+
+#map{
+    width: 100%;
+    height: 500px;
+}
+
+/*Block_8......................................................................*/
+#block_8{
+    margin-top: 10%;
+}
+#block_8_description{
+    font-size: 28px;
+    text-align: center;
+}
+#quiz{
+    font-size: 20px;
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+#wishes{
+    background-image: url(/newProjectWedding/images/Group\ 50.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-left: rgba(246, 211, 121, 1) solid 2px;
+    border-right: rgba(246, 211, 121, 1) solid 2px;
+    border-bottom: rgba(246, 211, 121, 1) solid 2px;
+    height: 70%;
+    width:70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.wish_each{
+    font-size: 24px;
+    font-family: "Playfair Display SC", serif;
+    margin-bottom: 3%;
+    border: rgba(246, 211, 121, 1) solid 1px;
+    background-color: rgba(253, 249, 238, 0.795);
+    border-radius: 10px;
+    padding: 1%;
+    margin-left: 3%;
+    margin-right: 3%;
+    
+}
+.inner_name{
+    text-align: end;
+}
+
+#stop_marquee{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 15%;
+}
+#stop_marquee_btn{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-top: rgba(246, 211, 121, 1) solid 1px;
+    font-size: 24px;
+    color: rgb(87, 82, 82);
+    font-family: "Playfair Display", serif;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: ease 0.5s;
+    background-color: rgba(252, 248, 237, 0.46)
+}
+#stop_marquee_btn:hover{
+    background-color: rgba(247, 237, 211, 0.849);
+}
+
+/*Block_9......................................................................*/
+#block_9_background{
+    background-image: url("/newProjectWedding/images/block_9_background.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+    margin-top: 10%;
+    padding-top: 5%;
+    justify-content: center;
+}
+
+#block_9_main{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(253, 249, 238, 0.795);
+    border: rgba(246, 211, 121, 1) solid 1px;
+    border-radius: 10px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+
+#block_9_title{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#wish_form{
+    margin-top: 5%;
+    font-size: 30px;
+    width: 80%;
+}
+
+.block_9_form{
+    font-size: 36px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+#comment_wish{
+    width: 100%;
+    background-color: rgba(253, 249, 238, 0.795);
+    border: rgba(246, 211, 121, 1) solid 1px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: ease 0.5s;
+    font-family: "Playfair Display SC", serif;
+    color: rgb(87, 82, 82);
+}
+#comment_wish:hover{
+    background-color: rgba(247, 237, 211, 0.849);
+}
+
+#comment_wish:focus{
+    outline: none;
+    box-shadow: 0 0 0px 2px rgba(246, 211, 121, 1);
+}
+
+#name_wish{
+    width: 100%;
+    background-color: rgba(253, 249, 238, 0.795);
+    border: rgba(246, 211, 121, 1) solid 1px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    border-radius: 10px;
+    font-family: "Playfair Display SC", serif;
+    cursor: pointer;
+    transition: ease 0.5s;
+    color: rgb(87, 82, 82);
+}
+#name_wish:hover{
+    background-color: rgba(247, 237, 211, 0.849);
+}
+
+#name_wish:focus{
+    outline: none;
+    box-shadow: 0 0 0px 2px rgba(246, 211, 121, 1);
+}
+
+.block_9_form-row {
+    display: flex;
+    justify-content: flex-end;
+    padding: .5em;
+    color: rgb(87, 82, 82);
+}
+
+.block_9_form >li> textarea {
+    height: 150px;
+}
+
+  .block_9_form >li> input,
+  .block_9_form >li> button,
+  .block_9_form >li> textarea {
+    padding: .5em;
+    flex: 1;
+    color: rgb(87, 82, 82);
+  }
+  .block_9_form > li> button {
+    width: 100%;
+    background-color: rgba(253, 249, 238, 0.795);
+    border: rgba(246, 211, 121, 1) solid 1px;
+    border-radius: 10px;
+    color: rgba(81, 74, 74, 1);
+    font-family: "Playfair Display SC", serif;
+    font-size: 30px;
+    width: 100%;
+    cursor: pointer;
+    transition: ease 0.5s;
+    color: rgb(87, 82, 82);
+  }
+  .block_9_form >li> button:hover {
+    background-color: rgba(247, 237, 211, 0.849);
+  }
+
+  footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+  }
+#footer_name{
+    font-size: 24px;
+}
+
+#footer_text{
+    font-size: 18px;
+}
+
+#links{
+    font-size: 18px;
+    margin-top: 3%;
+    text-decoration: underline;
+}
