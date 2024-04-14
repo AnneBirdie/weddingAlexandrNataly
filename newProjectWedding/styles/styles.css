@@ -64,7 +64,7 @@ a{
 /*Block_1...........................................................................................*/
 
 #block_1_background{
-    background-image: url("/newProjectWedding/images/Group\ 40.png");
+    background-image: url("../images/Group\ 40.png");
     justify-content: space-between;
 }
 
@@ -195,7 +195,7 @@ a{
 
 /*Block_3......................................................................*/
 #block_3_background{
-    background-image: url("/newProjectWedding/images/background_block_3.png");
+    background-image: url("../images/background_block_3.png");
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 10%;
@@ -446,7 +446,7 @@ select>option:focus{
 
 /*Block_4......................................................................*/
 /*#block_4_background{
-    background-image: url(/newProjectWedding/images/block_9_background.png);
+    background-image: url(../images/block_9_background.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;    
@@ -496,7 +496,7 @@ select>option:focus{
 */
 /*Block_5......................................................................*/
 #block_5_background{
-    background-image: url("/newProjectWedding/images/Group\ 50.png");
+    background-image: url("../images/Group\ 50.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
@@ -665,7 +665,7 @@ select>option:focus{
 }
 
 #wishes{
-    background-image: url(/newProjectWedding/images/Group\ 50.png);
+    background-image: url(../images/Group\ 50.png);
     background-repeat: no-repeat;
     background-size: cover;
     border-left: rgba(246, 211, 121, 1) solid 2px;
@@ -721,7 +721,7 @@ select>option:focus{
 
 /*Block_9......................................................................*/
 #block_9_background{
-    background-image: url("/newProjectWedding/images/block_9_background.png");
+    background-image: url("../images/block_9_background.png");
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover;
