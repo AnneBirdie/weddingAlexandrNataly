@@ -1,6 +1,6 @@
 
 
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbwVBAMHESe3BXhlnEoD8XOCnzZ830PnobHo9VvNbwZkwdh_eC9j1Rq4n-WJhW_tuDtngw/exec'
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwumyEQ7ZxQZxMiBA7AUCQSPxQ4NljGaIh5ZDkdLM05-gLHqmlmNdyrg5GfjMiuCeAn/exec'
   const form = document.forms['submit-to-google-sheet']
 
   let commentWish = document.getElementById("comment_wish");
