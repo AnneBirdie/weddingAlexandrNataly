@@ -9,7 +9,7 @@
 html{
     box-sizing: border-box;
     color: rgb(87, 82, 82);
-    font-family: "Playfair Display", serif;
+    font-family: "Poiret One", sans-serif;
     background-color: rgba(252, 248, 237, 1);
     margin: 0 auto;
 }
@@ -32,7 +32,7 @@ a{
 
 .titles{
     font-size: 48px;
-    font-family: "Playfair Display SC", serif;
+    font-family: "Poiret One", sans-serif;
     text-align: center;
 }
 
@@ -95,7 +95,7 @@ a{
 #block_1_text{
     font-size: 30px;
     text-align: center;
-    font-family: "Playfair Display SC", serif;
+    font-family: "Poiret One", sans-serif;
 }
 
 #block_1_date{
@@ -148,7 +148,7 @@ a{
 #block_2_bottom{
     text-align: center;
     font-size: 32px;
-    font-family: "Playfair Display SC", serif;
+    font-family: "Poiret One", sans-serif;
     border-top: rgba(191, 139, 4, 1) solid 1px;
     width: 50%;
 }
@@ -237,7 +237,7 @@ a{
     border: rgba(246, 211, 121, 1) solid 1px;
     cursor: pointer;
     transition: ease 0.5s;
-    font-family: "Playfair Display SC", serif;
+    font-family: "Poiret One", sans-serif;
     color: rgb(87, 82, 82);
 }
 #name:hover{
